@@ -1,37 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colby Whitehouse - Portfolio</title>
     <style>
-        h1 {text-align: center;}
-        h2 {text-align: center;}
-        p {text-align: center;}
-        div {text-align: center;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        p {
+            text-align: justify;
+            color: #666;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-    <title>Colby Whitehouse</title>
 </head>
 <body>
-    <h1>Colby Whitehouse</h1>
-    <h2>My Portfolio</h2>
-    <p><a href="https://github.com/cswhitehou">Github</a></p>
-    <p><a href="https://www.linkedin.com/in/colby-whitehouse/">LinkedIn</a></p>
-    <p><a href="https://drive.google.com/file/d/1ZsMV3mAH-UfdgUkSVlXRtDqPn8O9HVtQ/view?usp=sharing">Resume</a></p>
-    <div>
-        <h2>Skills</h2>
-        <ul>
-            <p>Programming Languages: C, Python</p>
-            <p>Tools & Technologies: Git, Linux, Unix</p>
-        </ul>
-    </div>
-    <div>
-        <h2>Education</h2>
-        <p>Bachelor of Science in Computer Engineering</p>
-        <p>University of Notre Dame</p>
-        <p>GPA: 4.0</p>
-        <p>Expected Graduation: May 2026</p>
-    </div>
-    <div>
-        <h2>Personal Statement</h2>
-        <p>I am a passionate and motivated computer engineering student with a strong desire to learn and grow in the field of technology, especially in the areas of cybersecurity, AI, ML, and blockchain. Through my education and hands-on experience, I have developed a solid foundation in software development and am eager to apply my skills to real-world projects. I thrive in collaborative environments and am committed to delivering high-quality solutions that have a real impact in technology and the rest of the world. I am excited and looking for opportunities to enter into the industry and create innovative, high-end technology.</p>
+    <header>
+        <h1>Colby Whitehouse</h1>
+        <h2>My Portfolio</h2>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://github.com/cswhitehou">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/colby-whitehouse/">LinkedIn</a></li>
+                <li><a href="https://drive.google.com/file/d/1ZsMV3mAH-UfdgUkSVlXRtDqPn8O9HVtQ/view?usp=sharing">Resume</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: C, Python</li>
+                <li>Tools & Technologies: Git, Linux, Unix</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p>Bachelor of Science in Computer Engineering</p>
+            <p>University of Notre Dame</p>
+            <p>GPA: 4.0</p>
+            <p>Expected Graduation: May 2026</p>
+        </section>
+        <section>
+            <h2>Personal Statement</h2>
+            <p>I am a passionate and motivated computer engineering student with a strong desire to learn and grow in the field of technology, especially in the areas of cybersecurity, AI, ML, and blockchain. Through my education and hands-on experience, I have developed a solid foundation in software development and am eager to apply my skills to real-world projects. I thrive in collaborative environments and am committed to delivering high-quality solutions that have a real impact in technology and the rest of the world. I am excited and looking for opportunities to enter into the industry and create innovative, high-end technology.</p>
+        </section>
     </div>
 </body>
 </html>
