@@ -51,6 +51,35 @@
             margin: 20px auto;
             padding: 0 20px;
         }
+        section {
+            padding-top: 60px; /* Default padding */
+            margin-top: -60px; /* Default negative margin */
+        }
+        /* Media Queries */
+
+        /* For small screens (e.g., smartphones) */
+        @media (max-width: 600px) {
+            .container {
+                margin: 120px auto 20px auto; /* Adjust margin for small screens */
+            }
+            
+            section {
+                padding-top: 80px; /* Adjust padding for small screens */
+                margin-top: -80px; /* Adjust negative margin for small screens */
+            }
+        }
+
+        /* For large screens (e.g., desktops) */
+        @media (min-width: 1200px) {
+            .container {
+                margin: 80px auto 20px auto; /* Adjust margin for large screens */
+            }
+            
+            section {
+                padding-top: 50px; /* Adjust padding for large screens */
+                margin-top: -50px; /* Adjust negative margin for large screens */
+            }
+        }
         h1, h2 {
             text-align: center;
             color: #333;
@@ -110,7 +139,7 @@
                 <li>
                     <h3>Crypto Trading Bot</h3>
                     <p>Developed a high-frequency trading bot using Python, implementing several technical indicators for automated cryptocurrency trading. Implemented Phemex API and AWS to let the bot continuously trade without my intervention.</p>
-                    <p><strong>Technologies used:</strong> Python, CCXT, Backtrader, Binance and Phemex API</p>
+                    <p><strong>Technologies used:</strong> Python, CCXT, Backtrader, Binance and Phemex APIs</p>
                     <p><a href="https://github.com/cswhitehou/CryptoTrader">View on GitHub</a></p>
                 </li>
                 <li>
