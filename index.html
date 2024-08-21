@@ -10,12 +10,41 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            scroll-behavior: smooth;
         }
         header {
             background-color: #007bff;
             color: #fff;
             text-align: center;
             padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            margin-bottom: 20px; /* Add space between nav and content */
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #004494;
+            border-radius: 4px;
         }
         .container {
             max-width: 800px;
@@ -53,35 +82,69 @@
 <body>
     <header>
         <h1>Colby Whitehouse</h1>
-        <h2>My Portfolio</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
-        <section>
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="https://github.com/cswhitehou">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/colby-whitehouse/">LinkedIn</a></li>
-                <li><a href="https://drive.google.com/file/d/1ZsMV3mAH-UfdgUkSVlXRtDqPn8O9HVtQ/view?usp=sharing">Resume</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: C, Python</li>
-                <li>Tools & Technologies: Git, Linux, Unix</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate and motivated computer engineering student with a strong desire to learn and grow in the field of technology, especially in the areas of cybersecurity, AI, ML, and blockchain. Through my education and hands-on experience, I have developed a solid foundation in software development and am eager to apply my skills to real-world projects. I thrive in collaborative environments and am committed to delivering high-quality solutions that have a real impact in technology and the rest of the world. I am excited and looking for opportunities to enter into the industry and create innovative, high-end technology.</p>
             <p>Bachelor of Science in Computer Engineering</p>
             <p>University of Notre Dame</p>
             <p>GPA: 4.0</p>
             <p>Expected Graduation: May 2026</p>
+            <ul>
+                <li>Programming Languages: C, Python, Java</li>
+                <li>Tools & Technologies: Git, Linux, Unix, Microsoft Office</li>
+            </ul>
         </section>
-        <section>
-            <h2>Personal Statement</h2>
-            <p>I am a passionate and motivated computer engineering student with a strong desire to learn and grow in the field of technology, especially in the areas of cybersecurity, AI, ML, and blockchain. Through my education and hands-on experience, I have developed a solid foundation in software development and am eager to apply my skills to real-world projects. I thrive in collaborative environments and am committed to delivering high-quality solutions that have a real impact in technology and the rest of the world. I am excited and looking for opportunities to enter into the industry and create innovative, high-end technology.</p>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Crypto Trading Bot</h3>
+                    <p>Developed a high-frequency trading bot using Python, implementing several technical indicators for automated cryptocurrency trading. Implemented Phemex API and AWS to let the bot continuously trade without my intervention.</p>
+                    <p><strong>Technologies used:</strong> Python, CCXT, Backtrader, Binance and Phemex API</p>
+                    <p><a href="https://github.com/cswhitehou/CryptoTrader">View on GitHub</a></p>
+                </li>
+                <li>
+                    <h3>Location Services App</h3>
+                    <p>Built a mobile app that provides real-time latitude, longitude, accuracy, altitude, and other data, along with the ability to track a route by setting waypoints.</p>
+                    <p><strong>Technologies used:</strong> Java, Android Studio, Google Pixel</p>
+                    <p><a href="https://github.com/cswhitehou/pixel-location-data">View on GitHub</a></p>
+                </li>
+            </ul>
         </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
     </div>
+
+    <footer>
+        <p>&copy; 2024 Colby Whitehouse</p>
+        <p>
+            <a href="https://github.com/cswhitehou">GitHub</a> |
+            <a href="https://www.linkedin.com/in/colby-whitehouse/">LinkedIn</a> |
+            <a href="https://drive.google.com/file/d/1ZsMV3mAH-UfdgUkSVlXRtDqPn8O9HVtQ/view?usp=sharing">Resume</a>
+        </p>
+        <p>Phone: 720-347-1572   Email: cwhiteh2@nd.edu</p>
+    </footer>
 </body>
 </html>
